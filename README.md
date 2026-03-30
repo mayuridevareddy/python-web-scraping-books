@@ -35,6 +35,7 @@ This project is a **Python-based web scraper** that extracts structured book dat
 ## 📂 Project Structure
 
 📁 python-web-scraping-books
+
 │
 ├── scraper.py # Main scraping script
 ├── all_books.csv # Extracted dataset
@@ -58,3 +59,6 @@ This project is a **Python-based web scraper** that extracts structured book dat
 pip install requests beautifulsoup4
 python scraper.py
 
+| Title        | Price | Availability | Rating |
+| ------------ | ----- | ------------ | ------ |
+| Example Book | 51.77 | In stock     | Three  |
