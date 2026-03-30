@@ -1,71 +1,39 @@
-# python-web-scraping-books
+# 🐍 python-web-scraping-books
 
-> Extracts structured book data from paginated websites and exports clean CSV files.
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
-![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4-green?style=flat-square)
-![Requests](https://img.shields.io/badge/Requests-HTTP-orange?style=flat-square)
-![CSV](https://img.shields.io/badge/Output-CSV-teal?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4-4CAF50?style=for-the-badge&logo=python&logoColor=white)
+![Requests](https://img.shields.io/badge/Requests-HTTP-FF6B35?style=for-the-badge&logo=python&logoColor=white)
+![CSV](https://img.shields.io/badge/Output-CSV-9B59B6?style=for-the-badge&logo=files&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+
+**Scrapes structured book data from paginated websites and exports clean CSV files.**
+
+</div>
 
 ---
 
-## Tech stack
+## 🔷 Tech Stack
 
-| Library | Role |
-|---|---|
+| 📦 Library | 🎯 Role |
+|:---|:---|
 | `requests` | Sends HTTP requests to target pages |
 | `beautifulsoup4` | Parses and navigates HTML content |
-| `csv` (stdlib) | Writes extracted data to file |
+| `csv` *(stdlib)* | Writes extracted data to file |
 
 ---
 
-## Features
+## 🚀 Features
 
-- Scrapes **Title, Price, Availability, and Rating** for each book
-- Handles **multi-page pagination** automatically
-- Exports a clean, analysis-ready **CSV file**
-- Beginner-friendly code structure, easy to extend
+| ✅ Feature | 📝 Description |
+|:---|:---|
+| 📚 Book details | Extracts Title, Price, Availability and Rating |
+| 🔄 Pagination | Automatically loops through all pages |
+| 💾 CSV export | Saves clean, analysis-ready data |
+| 🧩 Scalable | Beginner-friendly and easy to extend |
 
 ---
 
-## Project structure
+## 📂 Project Structure
 ```
-python-web-scraping-books/
-├── scraper.py       # main scraping script
-├── all_books.csv    # extracted dataset
-└── README.md        # documentation
-```
-
----
-
-## How it works
-
-1. Sends an HTTP GET request to the target website
-2. Parses the HTML response with BeautifulSoup
-3. Extracts Title, Price, Availability, and Rating fields
-4. Follows pagination links to scrape all pages
-5. Writes the collected data into `all_books.csv`
-
----
-
-## Setup & usage
-
-Install dependencies:
-```bash
-pip install requests beautifulsoup4
-```
-
-Run the scraper:
-```bash
-python scraper.py
-```
-
----
-
-## Sample output
-
-| Title | Price | Availability | Rating |
-|---|---|---|---|
-| A Light in the Attic | £51.77 | In stock | Three |
-| Tipping the Velvet | £53.74 | In stock | One |
-| Soumission | £50.10 | In stock | One |
