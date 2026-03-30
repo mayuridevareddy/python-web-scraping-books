@@ -37,3 +37,58 @@
 
 ## 📂 Project Structure
 ```
+📁 python-web-scraping-books/
+│
+├── 🐍 scraper.py       ← main scraping script
+├── 📄 all_books.csv    ← extracted dataset
+└── 📘 README.md        ← documentation
+```
+
+---
+
+## ⚙️ How It Works
+```
+🌐 Send HTTP request
+        ↓
+🍲 Parse HTML with BeautifulSoup
+        ↓
+🔍 Extract → Title | Price | Availability | Rating
+        ↓
+📑 Follow pagination links
+        ↓
+💾 Save to all_books.csv
+```
+
+---
+
+## ▶️ Setup & Usage
+
+**1. Install dependencies**
+```bash
+pip install requests beautifulsoup4
+```
+
+**2. Run the scraper**
+```bash
+python scraper.py
+```
+
+---
+
+## 📊 Sample Output
+
+| 📖 Title | 💰 Price | 🏷️ Availability | ⭐ Rating |
+|:---|:---:|:---:|:---:|
+| A Light in the Attic | £51.77 | ✅ In stock | ⭐⭐⭐ Three |
+| Tipping the Velvet | £53.74 | ✅ In stock | ⭐ One |
+| Soumission | £50.10 | ✅ In stock | ⭐ One |
+
+---
+
+<div align="center">
+
+Made with ❤️ using Python & BeautifulSoup
+
+![Python](https://img.shields.io/badge/Made%20with-Python-blue?style=flat-square&logo=python)
+
+</div>
